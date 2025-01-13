@@ -1,0 +1,41 @@
+body{
+    margin: 0; padding : 0;
+    background-image:url(https://toigingiuvedep.vn/wp-content/uploads/2021/04/hinh-nen-powerpoint-xin-chao-don-gian-tinh-te.jpg);
+    background-size: cover; /* Hình ảnh bao phủ toàn bộ màn hình */
+    background-repeat:no-repeat;  /* Không lặp lại hình ảnh */
+    background-position: center center; /* Căn giữa hình ảnh */
+    background-attachment: fixed;  /* Giữ hình nền cố định khi cuộn trang */
+    opacity: 100%;
+}
+@keyframes rainbow {
+    0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    57% { color: blue; }
+    71% { color: indigo; }
+    85% { color: violet; }
+    100% { color: red; }
+}
+@keyframes wave {
+    0% { transform: translateY(0); }
+    20% { transform: translateY(-10px); }
+    40% { transform: translateY(0); }
+    60% { transform: translateY(10px); }
+    80% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+.rainbow-wave{
+	font-size:50px;
+	font-family:Arial, san-serif;
+	text-align:center;
+    animation: rainbow 5s infinite linear, wave 2s infinite ease-in-out;
+}
+
+p{
+	font-size:30px;
+	text-align:center;
+	font-style:italic;
+	font-weight:bold;
+	animation: rainbow 5s infinite linear, wave 2s infinite ease-in-out;
+}
