@@ -20,7 +20,17 @@ public class UserEntity {
 		this.fullName = fullName;
 	}
 	public void setFullName(String fullName) {
-		//complete this code
+		if(fullName!=null &&fullName.trim().isEmpty()){
+			String[]parts=fullName.trim().split("\\s+");
+			String first=parts[0];
+			String last="";
+			if(parts.length>1){
+				last=parts[parts.length-1];
+			}
+			this.fullName=new FullName(first,last);
+		}else{
+			this.fullName=new FullName("","");
+		}
 	}
 	public int getId() {
 		return id;
